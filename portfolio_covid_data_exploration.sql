@@ -120,7 +120,7 @@ ORDER BY 4 ASC,3 DESC, 2 DESC
 --DATA EXPLORATION BY CONTINENT
 
 --TOTAL DEATH COUNT BY CONTINENT
---this query only shows the max per country
+--this query only shows the countries per continent with the MAX(total deaths)
 SELECT distinct(continent),  MAX(CAST(total_deaths as int)) AS 'Total Death Count'
 --ROUND(MAX((total_deaths/population)*100),2) AS 'Lowest Death Percentage'
 FROM PortfolioProject..CovidDeaths
